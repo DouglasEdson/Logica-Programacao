@@ -16,15 +16,19 @@ public class EstruturaIfElse {
             System.out.println("Vamos ficar em casa!");
         }
 
-        boolean temDinheiro = true;
+        boolean temDinheiro = false;
         boolean temCartao = false;
 
-        if (temDinheiro && temCartao) {
+       /* if (temDinheiro && temCartao) {
             System.out.println("Pede um ifood e um Zé delivery");
         } else if (temDinheiro || temCartao) {
             System.out.println("Pede um ifood");
         }else {
             System.out.println("Não pede nada.");
-        }
+        }*/
+
+        String mensagem = (temDinheiro) ? "Pede um ifood" : "Come o que tem em casa.";
+        System.out.println(mensagem);
+
     }
 }
